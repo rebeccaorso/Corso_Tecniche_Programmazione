@@ -11,6 +11,10 @@
     clear: both;
     }
 
+    selector:pseudo-class {
+      property:value;
+    }
+
 /* navbar */
 .navbar {
     background-color: whitesmoke;
@@ -30,6 +34,16 @@
     font-weight: 700;
   }
 
+a:link {
+  color: rebeccapurple;
+}
+a:hover {
+  color: blue;
+}
+
+a:active {
+  color: palevioletred;
+}
   /* body */
   body {
     background-image: url(439751.jpg);
@@ -46,7 +60,7 @@
     margin: 0 auto;
     padding: 40px;
     width:65vw;
-    height: 80vh;
+    height: 75vh;
     
   }
 
@@ -77,19 +91,20 @@
     background-color: #000000;
     color:beige;
     padding: 45px;
+    margin: 0 auto;
     position:relative;
+    width: 80%;
     top: 200px;
 }
 
 .contatti {
     background-color: white;
-    margin: 0 auto;
+    margin: 0 auto 450px auto;
     padding: 30px;
     width:45vw;
     height: 450px;
     position:relative;
     top: 300px;
-    bottom: 100px;
     box-shadow: 8px -10px 10px 5px #8D5EFF;
 
 }
@@ -110,19 +125,47 @@ textarea {
 
 /* footer */
 .footer {
-    position: fixed;
+    position:fixed;
+    margin-top: 20px;
     bottom: 0;
     width: 100%;
-    background-color: rgb(66, 54, 54);
+    height: 75px;
+    background-color: rebeccapurple;
     color: white;
+
   }
 
-  .footer il {
-    display: inline;
-    float: right;
+  .footer li {
     margin-right: 20px;
-    padding: 16px 16px;
-    text-align: center;
+
     font-size: 16px;
     font-weight: 700;
+    list-style: none;
+  }
+
+  .social {
+    float: right;
+    text-align: center;
+    position: relative;
+    right: 150px;
+    margin-right: 20px;
+    padding: 5px 5px;
+
+
+  }
+
+  .txt {
+    float: right;
+    position: relative;
+    right: 34%;
+    text-align: center;
+    padding: 5px 5px;
+  }
+
+  .contact {
+    float: left;
+    text-align: center;
+    position: relative;
+    left: 150px;
+    padding: 5px 5px;
   }
