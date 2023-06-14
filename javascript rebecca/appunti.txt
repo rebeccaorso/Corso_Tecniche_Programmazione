@@ -1,0 +1,52 @@
+console.log
+console= oggetto
+.log()= metodo
+.length = proprietà. no parentesi
+Console oggetto innestato
+
+Linguaggio Case Sensitive
+
+Array contenitore di elementi simili tra di loro
+
+In js gli array possono essere misti, ma non viene mai usato.
+
+//// FOR /////
+
+   let colori = ["rosso", "blu","giallo", "verde"];
+
+        for(let i = 0; i< colori.lenght; i++){ 
+        }
+
+
+///// FOR OFF
+        for (let colore of colori) {  //for of
+            console.log(colore);
+        }
+
+
+///// FOR IN
+        for (let indice in colori) {
+            console.log(colori[indice]);
+            }
+        
+
+    console.log("-----------FOT AL CONTRARIO-----");
+    for(let i= colori.length -1; i>0; i--){
+        console.log(colori[i]);
+    }
+
+///// IF /////
+if(condizione){corpo}
+
+== verifica contenuto di una variabile
+=== verifica il contenuto e il tipo di una variabile
+
+var numero1 = 10;
+var numero2 = "10";
+
+let confronto1 = (numero1 == numero2); // -> true
+let confronto2 = (numero1 === numero2); // -> false
+
+
+//&& AND logico e contemporaneamente
+// || OR logico oppure

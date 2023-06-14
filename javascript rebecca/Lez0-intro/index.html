@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="it">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <h1>Prima pagina con JS</h1>
+        <p>Pagina del corso Tecniche di Programmazione</p>
+        <!--JS collegamento allo script. A google non piace nell'head.-->
+        <p id="numStud"></p>
+        <script>
+            //stringhe
+            let a ="Rebecca";
+            var b = "Orso";
+
+            let eta = 29;
+
+            console.log("Ciao " + " " + a + " " + b + ". Ho " + eta + " anni ");
+            
+            console.log(typeof a);
+            console.log(typeof eta);
+
+            let anno = 2023;
+            let pi = 3.14;
+
+            console.log(typeof anno); 
+            console.log(typeof pi);
+
+            let somma = anno + pi;
+            console.log(somma);
+
+            let somma2 = a + pi + anno; // somma tra tipi diversi di dati
+            console.log(somma2)
+            
+
+            let num1 = "10";
+            let num2 = "20";
+
+            // cast del dato
+            let somma3 = Number(num1) + Number(num2);
+            console.log(somma3);
+
+
+        </script>
+        <!-- Script  su file esterno-->
+        <script src="./js/script0.js"></script>
+
+
+    </body>
+</html>
