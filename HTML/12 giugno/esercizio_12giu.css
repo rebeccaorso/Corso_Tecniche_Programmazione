@@ -1,0 +1,128 @@
+
+* {
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+    }
+
+/* navbar */
+.navbar {
+    background-color: whitesmoke;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+.navbar ul li {
+    display: inline;
+    float: right;
+    margin-right: 20px;
+    padding: 16px 16px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 700;
+  }
+
+  /* body */
+  body {
+    background-image: url(439751.jpg);
+  }
+
+  .primo_div {
+    position:relative;
+    top: 160px;
+  }
+
+  .benvenuti {
+    color:beige;
+    text-align: center;
+    margin: 0 auto;
+    padding: 40px;
+    width:65vw;
+    height: 80vh;
+    
+  }
+
+  .button{
+    background-color: rgb(240, 240, 240);
+    display: block;
+    margin: 0 auto;
+    box-shadow: 5px 4px 0px 0px #000000;
+    padding: 15px 20px;
+    font-size: 15px;
+}
+
+
+  h1 {
+    padding: 20px;
+  }
+
+  h2 {
+    text-align: center;
+  }
+
+  h3 {
+    padding: 10px;
+  }
+/* form  */
+
+.servizi {
+    background-color: #000000;
+    color:beige;
+    padding: 45px;
+    position:relative;
+    top: 200px;
+}
+
+.contatti {
+    background-color: white;
+    margin: 0 auto;
+    padding: 30px;
+    width:45vw;
+    height: 450px;
+    position:relative;
+    top: 300px;
+    bottom: 100px;
+    box-shadow: 8px -10px 10px 5px #8D5EFF;
+
+}
+
+.form-group{
+    margin-bottom: 20px;
+
+ }
+
+ input {
+    width: 95%;
+}
+
+textarea {
+    width: 95%;
+}
+
+
+/* footer */
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(66, 54, 54);
+    color: white;
+  }
+
+  .footer il {
+    display: inline;
+    float: right;
+    margin-right: 20px;
+    padding: 16px 16px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 700;
+  }

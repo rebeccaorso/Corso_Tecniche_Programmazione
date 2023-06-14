@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Open+Sans:wght@400;700&display=swap');
+
+html {
+    font-size: 20px;
+}
+
+.container {
+    background-color: #aeffd8f3; /*Div contenitore con classe “container” di colore RGB 174, 255, 216,*/
+    margin: 0 auto; /*centrato orizzontalmente nella pagina*/
+    height: 100vh;/*altezza 100% del viewport height*/
+    width:70vw; /*larghezza 70% del body*/
+    font-size: 2rem ; /*grandezza font 2rem*/
+}
+
+h1 {
+    font-family: 'Lobster', cursive;
+}
+
+#contenuto {
+    background-color: rgb(238, 229, 233); /*colore di sfondo RGB 238, 229, 233*/
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    color:red;/*colore testo red,*/
+    margin: 0 auto;
+    width: 80%; /*larghezza 80% del container*/
+    height: 200px;
+    overflow-y: scroll;
+    padding: 2rem 2rem;/*Spaziare il testo contenuto nel div contenuto dai bordi di almeno 2rem*/
+    border: 2px solid red; /*Dare un bordo rosso continuo di 2 pixel al div contenuto*/
+  
+}
+
+.colore {
+    color:#241E4E!important; /*Impostare colore del testo #241E4E per tutta la pagina e fare in modo che sovrascriva il colore
+    rosso dato al div contenuto senza cambiare le dichiarazioni fatte prima*/
+}
+
