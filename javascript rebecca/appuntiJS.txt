@@ -1,0 +1,130 @@
+console.log
+console= oggetto
+.log()= metodo
+.length = proprietà. no parentesi
+Console oggetto innestato
+
+Linguaggio Case Sensitive
+
+Array contenitore di elementi simili tra di loro
+
+In js gli array possono essere misti, ma non viene mai usato.
+
+//// FOR /////
+
+   let colori = ["rosso", "blu","giallo", "verde"];
+
+        for(let i = 0; i< colori.lenght; i++){ 
+        }
+
+
+///// FOR OFF
+        for (let colore of colori) {  //for of
+            console.log(colore);
+        }
+
+
+///// FOR IN
+        for (let indice in colori) {
+            console.log(colori[indice]);
+            }
+////// FOR EACH        
+
+    console.log("-----------FOT AL CONTRARIO-----");
+    for(let i= colori.length -1; i>0; i--){
+        console.log(colori[i]);
+    }
+
+///// IF /////
+if(condizione){corpo}
+
+== verifica contenuto di una variabile
+=== verifica il contenuto e il tipo di una variabile
+
+var numero1 = 10;
+var numero2 = "10";
+
+let confronto1 = (numero1 == numero2); // -> true
+let confronto2 = (numero1 === numero2); // -> false
+
+
+//&& AND logico e contemporaneamente
+// || OR logico oppure
+
+
+/////////////////
+
+FUNZIONI
+
+///////////////////
+JavaScript programmazione funzionale.
+Le funzioni servono a racchiudere parti di script.
+
+function sayHello()
+function cosa stiamo facendo
+sayHello nome della funzione
+()firma del metodo
+
+functiongetArea(altezza, larghezza){
+return altezza*larghezza;
+}
+
+richiamare getArea(4,5);
+
+chiamiamo metodi le funzioni legate a degli oggetti
+funzioni sono le altre
+
+ESPRESSIONE FUNZIONALE= non puo essere richiamata prima che l'interprete l'abbia raggiunta
+Dichiarare
+let area = function(altezza, larghezza){
+return altezza*larghezza:
+}
+richiamare
+let size = area(5,4);
+
+
+SCOPE visibilità
+quando dichiariamo una var al di fuori di una funzione è una variabile globale (maggiore utilizzo di memoria, livello globale)
+quando dichiariamo una var all'interno di una funzione è leggibile solo all'interno è una variabile Locale (minore utilizzo di memoria)
+
+è preferibile usare una o l'altra? no, dipende dall'utilizzo.
+
+il richiamo della funzione è totalmente indipendente dalla sua dichiarazione. posso richiamare prima di dichiarare.
+
+tutte le volte che la funzione restituisce qualcosa bisogna intercettarla.
+le funzioni sono tutte globali tranne le funzioni locali.
+
+funzioni parametriche cioe funzioni con firma piena, funzioni con parametri definiti
+
+fuction di callback
+calcolaVolume(calcolaArea(4, 5), 75);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

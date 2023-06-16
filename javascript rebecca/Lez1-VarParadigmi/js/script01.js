@@ -60,10 +60,10 @@ let voto = [
 for(let i = 0; i < studenti.length; i++) {
     if(voto[i] >=18 ){
         console.log("Ha preso "+ voto);
-        listaStud.innerHTML += "<li>" + voti[i] + " " studenti[i] + "</li>";
+        listaStud.innerHTML += "<li>" + studenti[i] + " ha preso " + voto[i] + "</li>";
     }else{         
         console.log("Non superato");
-        listaStud.innerHTML += "<li class='txtRed'>" + "Non superato" + "</li>";
+        listaStud.innerHTML += "<li class='txtRed'>" + studenti[i] + " non ha superato l'esame" + "</li>";
 
     }
 }
