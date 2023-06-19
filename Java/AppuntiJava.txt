@@ -1,0 +1,111 @@
+Metodo dei container.
+----------------------------
+19/06/2023
+
+è TodoList che aggrega Todo. Il legame debole è rappresentato da un rombo vuoto.
+La classe mioScanner ha come proprieta lo scanner.
+
+mioScanner lo uso nella TodoList 
+
+ogni elemento del carrello sarà un prodoto. 
+metterò il modello del dato sta nel model, fa si che il nome completo sia model.Prodotto.
+Il package è come se fosse il cognome. package in minuscolo, classe in maiuscolo.
+
+le proprietà sono private e quindi non sono modificabili dall'esterno.
+
+il costruttore del prodotto si deve chiamare come la classe e non ha metodo di ritorno.
+il costruttore posso mettere una annotazione di java doc. mi serve a utilizzare un nuovo prodotto di quel tipo
+
+Super fa riferimento alla super class, al genitore.
+Il costruttore NON SI EREDITA.
+
+public Prodotto(String nome, String codice, double prezzo);
+(String nome, String codice, double prezzo) = la firma.
+
+noi determiniamo le capacità di un oggetto in base ai permessi che gli diamo.
+
+Icapsulamento, devo nascondere all'esterno i dati.
+
+model cuore del sistema.
+
+il prodotto lo devo mettere nel contenitore -> ProdottoCtrl
+
+prodotti è un contenitore di prodotto.
+
+
+public void addProdotto(Prodotto p, int pos) {
+METODO PER AGGIUNGERE il prodotto p alla posizione pos.Se pos già occupata viene sovrascritta
+
+aggiungere il prodotto alla prima posizione disponibile
+se non c'è posto e devo ritornare un intero e quindi potrebbe ritornare un numero negativo, non zero perchè zero prima posizione dell'array. -1 usato per una posizione non disponibile.
+se lo trova ritorna un numero da 0 in pìsù, 0 compreso.
+
+se non c0è nulla (null) ritorna la posizione.
+return esce dal ciclo.
+
+per ogni prodotto io aggiungo prodotto allo scontrino. programmazione procedurale.
+scatola vuota logica per riempire la scatola.
+prevede la creazione di variabili prima della logica.
+
+public String stampa() {
+		String scontrino = "";
+		for (Prodotto prodotto : prodotti) {
+			scontrino += prodotto + "\n";
+		}
+		return scontrino;
+	}
+
+
+static java lo usa dentro .Math, dentro .Arrays, .System. java non gli piace static, static è della classe.
+
+posso esportare:
+JAR java archive
+runnable JAR file: eseguibile per la macchina virtuale
+
+creare cartella lib posso importare un JAR. informare eclipse con buiid path (processo di compilazione) che è una libreria utilizzabile.
+non abbiamo il codice sorgente, tutto cio che è privato non lo vediamo. abbiamo solo la parte eseguibile.
+
+////
+
+Studente = model
+proprietà matricola, nome, cognome.
+costruisco il costruttore.
+
+noi non vogliamo che sia modificabile, ti do solo i getters. il get ti permette di leggere la proprietà. i set per modificarla per questo non vengono concessi in questo caso
+
+toString ritorna la stringa con tutti i valori.
+
+oggetto registro nel model
+aggregato di studenti. ArrayList. tra le angolari devo mettere il tipo del dato. 
+private ArrayList<Studente> elenco;
+l'arraylist è di tipo dinamica. è una classe per gestire le collezioni. ammette duplicati.
+
+registro ha due proprietà
+una di tipo array e una di tipo stringa.
+
+un'aulaCtrl ha come sua proprietà il Registro
+
+serve un metodo per aggiungere studente.
+il registro ha dei metodi, uno di questi è getElenco, mi ritorna elenco, un array di studenti.
+metodo add degli arrayList sa già come aggiungere nel primo posto libero, non devo fare la ricerca del posto.
+
+deve essere il controller a dare il registro.
+
+view package che si vede. AulaDemo --> main
+dentro aula inizializzata c'è il registro inizializzato
+foreach per ogni studente chiamo il controller e stampo lo studente.
+
+se hai una lista di nomi su un file di testo.
+new folder 'files' e creo un file di testo.
+devi preoccuparti del possibile fallimento perchè i files non dipendono da java. ti obbliga a gestire l'ipotesi che non venga trovato. 
+"surround with try and catch"
+
+
+
+
+
+
+
+
+
+
