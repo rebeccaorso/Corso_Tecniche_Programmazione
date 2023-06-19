@@ -99,24 +99,79 @@ funzioni parametriche cioe funzioni con firma piena, funzioni con parametri defi
 fuction di callback
 calcolaVolume(calcolaArea(4, 5), 75);
 
+-------------------------
+19/06/2023
+ogni funzione guarda solo se stessa
+
+addEventListener solo su html object monto un ascoltatore di eventi.
+
+OGGETTI BUILT IN
+
+BOM Browser Object Model
+questo modello contiene oggetti che rappresentano la finestra o la scheda del browser.
+
+Window(scheda del browser) -> document (pagina web) -> history (cronologia) -> location(url) -> navigator(info sul browser -> screen(info su display del dispositivo)
+
+DOM Document object model
+Il dom crea un modello della pagina web corrente utilizzando gli oggetti. l'oggetto più elevato della gerarchia è document
+
+OGGETTI GLOBALI:
+STRING
+NUMBER
+MATH
+
+let stringa1 = "ciao come stai? Io ho caldo!";
+
+lo split splitta una stringa in base ad un pattern e la fa diventare una stringa
+let split = stringa1.split(" ");
+console.log(split);
+0: "ciao"
+1: "come"
+2: "stai?"
+3: "Io"
+4: "ho"
+5: "caldo!"
+
+join è un metodo per array
+let join = split.join("_");
+console.log(join);
+ciao_come_stai?_Io_ho_caldo!
 
 
+per le date si importano delle librerie
+
+metodi: funzioni strettamente legati agli oggetti
+un oggetto è un modello di entita presente nel mondo reale, in un oggetto variabili e funzioni assumono nomi nuovi
+
+CREARE OGGETTO
+1)NOTAZIONE LETTERALE
+let Studente = {  --> le parentesi graffe identificano l'oggetto
+nome: 'Pippo',
+cognome:'Ippo'
+voto: 30,
+
+superaEsame: function(){
+alert('esame superato');
+}
+}
+
+la funzione è dentro l'oggetto. Senza avere classe
+
+2) NOTAZIONE A COSTRUTTORE
+
+function Studente(nome, cognome, voto) {
+this.nome = nome;
+this.cognome
 
 
+this.superaEsame=function
+}
+la funzione costruttore crea istanze dell'oggetto. la parola chiave new se
+le funzioni dichiarata dentro un oggetto è detta METODO
 
 
-
-
-
-
-
-
-
-
-
-
-
-
+serie: estrarre uno da 10 numeri. 5 numeri
+numeri 1 a 90 con estrazione
 
 
 
