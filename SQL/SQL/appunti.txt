@@ -1,0 +1,49 @@
+Tabella associativa per collegare due tabelle scollegate tra di loro.
+Condizioni di Join -> numero di tabelle - 1
+
+ESEMPIO: o inglese o italiano
+and nazionalita in('en','it') OPPURE and (nazionalita = 'en' OR nazionalita = 'it')
+
+
+ATTIVITA REFERENZIALE
+Quando cancello un record da una tabella rompo l'integrità dei dati.
+Se cancello un record per preservare le righe figlie
+blocca l'operazione
+cancellazione in cascata: tutte le righe figlie le elimini
+quando cancelli setti a null
+
+I due cambi coinvolti nella relazione devono collegare lo stesso tipo di dati
+
+CREATE TABLE editore (
+id INT AUTO_INCREMENT,
+nome VARCHAR (200),
+PRIMARY KEY(id)
+
+CREATE TABLE libro (
+id INT AUTO_INCREMENT,
+titolo VARCHAR (200),
+editore_id INT NOT NULL,
+PRIMARY KEY(id)
+INDEX editore_key(editore_id),
+CONSTRAINT fk_libro_editore --> OPZIONALE ma consigliata per stabilire il nome del vincolo.
+	FOREIGN KEY(editore_id) REFERENCES editore(id)
+ON DELETE CASCADE
+ON UPDATE CASCATE);
+
+ALTER TABLE libro
+ADD CONSTRAINT fk_libro_editore
+FOREIGN KEY 
+
+
+RESTRICT e NO ACTION sono la stessa cosa
+blocca l'operazione se ci sono righe figlie
+
+
+
+
+
+
+
+
+
+

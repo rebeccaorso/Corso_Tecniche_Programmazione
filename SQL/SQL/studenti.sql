@@ -1,0 +1,1 @@
+SELECT * FROM goal2023.studenti;
