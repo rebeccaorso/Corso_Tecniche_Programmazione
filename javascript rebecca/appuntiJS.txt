@@ -173,13 +173,35 @@ le funzioni dichiarata dentro un oggetto è detta METODO
 serie: estrarre uno da 10 numeri. 5 numeri
 numeri 1 a 90 con estrazione
 
+----------------------------------------------
+21/06/2023
+dichiarazione con funzione costruttore
+lettera maiuscola -> metodo costuttore
+lettera minuscola -> funzione
+----------------------------------------------
+
+23/06/2023
+
+funzione anonima function(){ richiammo tutte le funzioni che voglio far partire insieme}
 
 
+///DOM
+DOM document object model
+è un insieme di regole distinto, implementato dai principali browser. si occupa di:
+creare un modello della pagina html utilizzando un albero del DOM
+accedere al contenuto della pagina html utilizzando metodi e proprietà degli oggetti del modello
+
+document -> html ->head -> title ->text
+		-> body -> h1 -> text
+			-> <a> href -> link text
 
 
+document.querySelector('cssSelector') = recupera solo la prima occorrenza che sia id o classe
+document.querySelectorAll('cssSelector')
+
+nodelist tipo del dato
 
 
-
-
+//ESERCIZIO
 
 

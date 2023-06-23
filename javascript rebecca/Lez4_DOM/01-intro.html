@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <link rel="stylesheet" href="css/style.css">
+
+
+
+<h1>Query Selector </h1>
+<h4>Lista</h4>
+<ul id = "listaSpesa">
+<li id="uno" class ="txtRed">Pane</li>
+<li id="due"class ="txtRed">Acqua</li>
+<li id="tre"class ="txtRed">Vino</li>
+<li id="quattro"class ="txtRed">Nutella</li>
+<li id="cinque"class ="txtRed">Pasta</li>
+
+</ul>
+<h4>Lista Ecommerce</h4>
+<ul id = "listaEcommerce">
+    <li id="uno" class ="txtRed">Mouse</li>
+    <li id="due"class ="txtRed">Pad</li>
+    <li id="tre"class ="txtRed">Schermo</li>
+    
+    </ul>
+
+<script>
+
+//querySelector
+let uno = document.querySelector("#uno");
+console.log(uno);
+
+// let el = document.querySelector(".txtRed"); //poco usato
+
+let listaSpesa = document.querySelector("#listaSpesa");
+console.log(listaSpesa);
+
+//voglio prendere tutti gli li della pagina
+let lis = document.querySelectorAll("li"); //mi prende tutti gli li della pagina
+console.log(lis);
+
+
+//restituisce una nodelist
+// prendo i li specifici di quella classe
+let list = document.querySelectorAll("li.txtRed"); 
+
+//voglio tutti gli li della listaEcommerce
+let lisEc = document.querySelectorAll("#listaEcommerce li.txtRed");
+
+
+// voglio recuperare tutti gli li della lista della spesa
+let listaSpesaAlt = document.querySelector("#listaSpesa");
+let liListaSpesaAlt = listaSpesaAlt.children;
+
+
+//primo li della lista spesa
+let primoFiglioEc = document.querySelector("#listaEcommerce").firstElementChild.firstChild; 
+console.log(primoFiglioEc);
+
+//ultimo li della lista ecommerce
+let ultimoFiglioEc =document.querySelector("#listaEcommerce li").children;
+console.log(ultimoFiglioEc[ultimoFiglioEc.length -1]);
+
+
+</script>
+
+    <script src="./js/script00.js"></script>
+</body>
+</html>
