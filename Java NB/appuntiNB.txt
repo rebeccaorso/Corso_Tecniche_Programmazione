@@ -166,18 +166,78 @@ for (int i = 0; i < 5; i++) {            ASSEGNAZIONE DINAMICA. valorizzato i va
             
         }
 
+----------------------------------------------------
+
+22/06/2023
+
+ 
+        //funzione di callback
+        lista.forEach(nani ->System.out.println(nani) );
+        
+        //method reference
+        lista.forEach(System.out::println);
+        
+        lista.remove("eolo");
+        //lista.remove(0);
+
+	.add() aggiunge un elemento in coda
+        .add(0, x) aggiunge x in prima posizione
+        .remove(i) rimuovo l'elemento alla posizione i
+        .size() ritorna dimensione di ArrayList
+        .get(i) ritorna l'elemento all'indice i
+        .set(i, a) assegna il valore a nella posizione i
+        .isEmpty() controlla se l'arraylist è vuoto
+        .contains(x) controlla se x è contenuto nell'array
+        
 
 
+---------------------------------------------------------
+GESTIONE ECCEZIONI
 
+vado a gestire l'eccezione particolare però se ho più eccezioni a priori ne metto una generale
+se sbaglio a mettere l'eccezione e non ci sono altre opzioni continua ad andare in errore, se ha una opzione di tipo generico salta l'eccezione sbagliata e passa a quello dopo.
 
+ try{
+    int c=a/b;
+        System.out.println(c);
+    }catch(NullPointerException | ArithmeticException e){
+        System.out.println("niente panico è solo diviso 0" + e.getMessage());  
+    }catch(Exception e){
+        System.out.println("altro errore che non so qual è" + e.getMessage());
+    }finally{
+        System.out.println("vengo eseguito comunque anche se non ci sono errori");
+    }
 
+possiamo avere vari tipi di eccezioni legate tra di loro tra and e or
+ogni try-catch può avere il suo finally.finally quando si utilizzano risorse esterne
 
+nel TRY sollevo un'eccezione
+nel CATCH gestico l'eccezione
 
+  //  PROPAGAZIONE DELLE ECCEZIONI
+        try{
+            System.out.println("blocco try esterno");  
+            
+            try{
+                System.out.println("blocco try interno");  
+                throw new Exception("eccezione sollevata dal blocco interno");
+                
+                
+            }catch(ArithmeticException e){
+                System.out.println("gestisco l'eccezione del blocco interno");    
+            }finally{
+                 System.out.println("finally del blocco interno");
+            }
 
+        }catch(Exception e){
+            System.out.println("Sto gestendo l'eccezione che non è gestita dal blocco interno");
+            
+        }finally{
+            System.out.println("finally del blocco esterno");
+        }
+        
 
-
-
-
+metodo checked sono obbligato a mettere il metodo quando lo richiamo. tutte le risorse esterne devo essere tra try-checked.
 
 
 
