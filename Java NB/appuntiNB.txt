@@ -238,6 +238,35 @@ nel CATCH gestico l'eccezione
         
 
 metodo checked sono obbligato a mettere il metodo quando lo richiamo. tutte le risorse esterne devo essere tra try-checked.
+--------------------------------------------------------------------
+27/06/2023
+
+attributi descrivono le caratteristiche della classe
+i metodi rappresentano le funzionalità della classe, cosa la classe può fare
+
+costanti in maiuscolo e sempre inizializzate
+
+Le classi sono tipo di dato.
+
+Persona persona1 = new Persona(); --> Persona è tipo di dato, persona1 è il valore. new Persona è un costruttore.
+
+Costruttore di default è già presente nella classe Object(la classe da cui derivano tutte le altre classi) è gia predefinito vuoto, ma lo si può esplicitare.
+
+OGGETTO puntatore alla memoria
+COSTRUTTORE = metodo che serve per creare un oggetto.
+si usa this. per non creare ambiguità. si riferisce all'attributo della classe, quello dopo = è il parametro
+
+OVERLOAD creare un'altra versione della stessa cosa
+OVERRIDE sovrascrivere. lo si usa sempre su toString
+
+per confrontare due oggetti utilizzare il metodo EQUALS
+
+capi saldi della programmazione ad oggetti
+incapsulamento = rendere privati gli attributi.
+ereditarietà = 
+polimorfismo = 
+
+
 
 
 
