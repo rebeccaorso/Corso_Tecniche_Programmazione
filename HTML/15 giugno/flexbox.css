@@ -23,9 +23,11 @@
         top: 0;
         width: 100%;
         box-shadow: 0px 7px 9px 4px #899481;
-        z-index: 1;
+        z-index: 10;
         font-family: 'Quicksand';
         font-weight: 700;
+        font-size: 20px;
+        position: fixed;
     }
 
     .nav-links {
@@ -72,12 +74,12 @@
         display: flex;
         justify-content: space-around;
         font-family: 'Quicksand';
-        margin-top: 50px;
+        margin-top: 150px;
         height: 80vh;
     }
     .benvenuti {
         width: 50vw;
-        margin-top: 180px;
+        margin-top: 190px;
     }
 
     h1 {
@@ -100,8 +102,8 @@
     }
 
     .corona {
-        height: 600px;
-        width: 650px;
+        height: 650px;
+        width: 700px;
     }
 
     .parte2 {
@@ -219,6 +221,161 @@ input, select {
 }
 
 .contatti h2 {
+    font-size: 25px;
     text-align: center;
     margin-bottom: 15px;
 }
+
+.btn {
+    display: block;
+    margin: 0 auto;
+    background-color:#cdbcab;
+    box-shadow: 5px 4px 0px 0px #000000;
+    color:#11100f;
+    border-radius: 25px;
+    border-color: #cdbcab;
+    padding: 12px 20px;
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+
+
+/* Media Query*/
+
+/* Media query per dispositivi con larghezza inferiore a 768 pixel */
+@media screen and (max-width: 767px) {
+    /* Regole CSS per dispositivi mobili */
+
+    .navbar{
+        font-size: 12px;
+        width: 100%;
+    }
+    .logo {
+        height: 50px;
+        width: 50px;
+        margin: 5px 10px 10px 10px;
+    }
+    .nav-links {
+        display: flex;
+        justify-content: space-around;
+        margin-right:40px;
+        font-size: 15px;
+    }
+   
+    .centro{
+        Flex-direction: column-reverse;
+        margin-top: 20px;
+        height: 65vh;
+        width: 100vw;
+        justify-content: center;
+    }
+
+    .imgContainer{
+        position:absolute;
+    }
+    .corona {
+        height:100%;
+        width: 100%;
+    }
+    .benvenuti {
+        background-color: #b3b9aed0;
+        width: 100%;
+        position: relative;
+        z-index: 1;
+        margin-top: 5px;
+        text-align: center;
+        padding: 10px;
+      }
+
+      h1{
+        font-size: 30px;
+        margin: 5px;
+      }
+
+      .benvenuti p {
+        font-size: 20px;
+        font-weight: 500;
+        margin: 10px 15px;
+    }
+    .start {
+        font-weight: 700;
+        font-size: 25px;
+        margin: 20px 10px;
+        color:#832c4c;
+        text-decoration: underline;
+    }
+
+    .parte2 {
+        display: flex;
+        width: 100vw;
+        Flex-direction: column;
+        margin-top: 100px;
+        margin-bottom: 100px;
+        height: 100vh;
+    }
+    .quadro {
+        margin-left: 20px;
+        height: 30vh;
+        width: 90vw;
+        margin-top: 20px;
+        padding: 10px;
+    }
+    .quadro h2 {
+        font-size: 20px;
+        margin: 20px 0 10px 20px;
+    }
+
+    .logo2 {
+        height: 40px;
+        width: 40px;
+        margin: 15px 0 0 15px;
+    }
+    .footer p {
+        font-size: 10px;
+    }
+    
+    /* FORM */
+    .contatti {
+        margin:35% auto;
+        width:95vw;
+        height: 55vh;
+    }
+    .contatti h2 {
+        text-decoration: underline;
+        margin-bottom: 20px;
+    }
+
+    input, select {
+        width: 100%;
+        height: 35px;
+    }
+    
+
+    .button {
+        padding: 10px 5px;
+        font-size: 15px;
+        margin-bottom: 20px;
+    }
+
+    h4 {
+        font-size: 15px;
+        margin: 10px 10px;
+    }
+
+    .footer li {
+        font-size: 10px;
+    }
+    .contatti h2 {
+        font-size: 20px;
+    }
+    
+      
+    }
+    /* Media query per dispositivi con larghezza compresa tra 768 e 1023 pixel */
+    @media screen and (min-width: 768px) and (max-width: 1023px) {
+    /* Regole CSS per tablet */
+    }
+    /* Media query per dispositivi con larghezza superiore a 1023 pixel */
+    @media screen and (min-width: 1024px) {
+    /* Regole CSS per desktop */
+    }
