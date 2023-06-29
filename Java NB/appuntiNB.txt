@@ -265,13 +265,36 @@ capi saldi della programmazione ad oggetti
 incapsulamento = rendere privati gli attributi.
 ereditarietà = 
 polimorfismo = 
+--------------------------------------------------------
+28/06/2023
 
+oggetti anonimi che si creano direttamente con New. lo puoi richiamare solo con la posizione dell'array.
 
+classe anonima= si usa quando bisogna dare un comportamento diverso allo stesso metodo-
+sovrascrive il metodo vecchio. 
 
+   public void ciao(){
+        System.out.println("ciao");
+    }
 
+//classe anonima
+ Anonima c = new Anonima(30) { 
 
+            public void ciao() {
+                System.out.println("hello");
+            }
+        };
 
+EREDITARIETA: si può fare solo quando la classe che si vuole estendere è un tipo di dato della classe base.
+risponde alla domanda "è un... ?" -> studente è una persona? si quindi posso estendere la classe persona
+io eredito tutto quello che è pubblico
+super -> superclasse. classe superiore
 
+public Studente(String materia, String nome, String cognome, int eta) {
+        super(nome, cognome, eta); // chiamo il costruttore di Persona
+        this.materia = materia; //attributo di Studente
+    }
 
+classe base: minor numero di attributi possibili
 
 
