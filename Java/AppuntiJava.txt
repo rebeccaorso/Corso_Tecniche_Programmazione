@@ -24,7 +24,7 @@ public Prodotto(String nome, String codice, double prezzo);
 
 noi determiniamo le capacità di un oggetto in base ai permessi che gli diamo.
 
-Icapsulamento, devo nascondere all'esterno i dati.
+Incapsulamento, devo nascondere all'esterno i dati.
 
 model cuore del sistema.
 
@@ -99,6 +99,87 @@ se hai una lista di nomi su un file di testo.
 new folder 'files' e creo un file di testo.
 devi preoccuparti del possibile fallimento perchè i files non dipendono da java. ti obbliga a gestire l'ipotesi che non venga trovato. 
 "surround with try and catch"
+
+---------------------------------------------------------------
+
+26/06/2023
+
+variabili tipo primitivo
+variabili tipo reference
+array costrutto del linguaggio, va inizializzato come oggetto. grandezza dichiarata nel momento 
+length è una proprieta per i primitivi e array
+length è un metodo per le striinghe e ha bisogno di ()
+operatori servono  per concatenare.
+= assegnazione
+operatore relazionale == in java no 3= perche abbiamo già dichiarato il tipo e non serve questo confronto.
+
+controllo del flusso
+strutture sintattiche -> bivi if /switch
+operatore ternario conviene tenerlo semplice, al massimo un bivio. logica binaria. vero o falso.
+è preferibile dividere un problema in un sottoproblema più semplice? sì
+
+strutture iterative:
+for ciclo di lunghezza definita, dobbiamo creare una variabile di supporto. costrutto per scorrere []
+
+se ho obbligatoriamente un input e ritorno sempre un output è una funzione
+
+programmazione orientata agli oggetti:
+nasce con lo scopo di simulare, modellare la realtà nei linguaggi di programmazione.
+si basa su classe e oggetti
+
+è l'oggetto che tiene in sè sia l'informazione che il metodo.
+
+è normale avere molte classi nel modello, perchè rappresenta la scomposizione in oggetti.
+classi che modellano questi oggetti.
+
+un paradigma, uno schema di progettazione è il MVC (model - view - controller). esistono anche altri approcci. prevede che l'utente vede una vista che gli permette di interagire. controller capisce quello che voglio fare e si interfaccia con il cuore del programma, il model, che ritorna una vista.
+
+CRUD / VERBS
+to post = aggiungere una risorsa che non c'era
+to update = modificare risorsa esistente
+to get = prendere una risorsa esistente
+to delete = cancellare una risorsa
+
+
+query string: stringa per fare richiesta con get
+
+Tomcat di Apache. ci permette di usare java e eclipse per motare una web application
+
+---------------------------------------------------------------------------------------------
+
+03/07/2023
+
+interfaccia
+
+model=contenuto -> le classi che rappresentano il contenuto
+view= vista-interfaccia-web app
+controller= logica che mi permette di controllare 
+
+La classe può essere dichiarata astratta anche se non ha metodi astratti. Ma basta un metodo astratto per DOVER dichaiarare la classe come astratta.
+
+costruttore e tutto ciò che è privato non si eredita
+
+modificatore di accesso
++ public
+- private
+# protected
+
+programmazione per contratto
+
+interfaccia legge l'input dell'utente
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
