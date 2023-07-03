@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+    <!-- 
+    Mostra una lista di Pokemon (solo ed esclusivamente il nome) scelti da te, tra i tuoi preferiti. 
+    Al click sul nome mostra una card con titolo (nome Pokemon), immagine e descrizione del Pokemon.
+
+    Extra1: al click sull'immagine mostra un'altra foto dello stesso pokemon. 
+    Non preoccuparti della dimensione immagine, dovrebbero essere tutte della stessa misura.
+
+    Extra2: inserisci un pulsante "Chiudi" nella card per farla scomparire
+
+    -->
+
+    <h1>Pokedex</h1>
+
+    <ul id="pokemon">
+        <li data-name="Cherubi">Cherubi</li>
+        <li data-name="Eevee">Eevee</li>
+        <li data-name="Jigglypuff">Jigglypuff</li>
+        <li data-name="Togepi">Togepi</li>
+        <li data-name="Torchic">Torchic</li>
+      </ul>
+
+      <div id="cartaPokemon" style="display: none;">
+        <h2 id="nomePokemon"></h2>
+        <img id="imgPokemon" src="" alt="">
+        <p id="descrizionePokemon"></p>
+      </div>
+
+
+
+
+
+
+
+    <script>
+
+    let pokemons=[
+        {
+            nome: "Cherubi",
+            img: "./img/cherubi.jpg",
+            descrizione: "I Cherubi amano prendere il sole nelle giornate calde."
+        },
+        {
+            nome: "Eevee",
+            img: "./img/evee.jpg",
+            descrizione: "Eevee è un Pokémon di piccole dimensioni."
+        },
+        {
+            nome: "Jigglypuff",
+            img: "./img/jigglypuff.jpg",
+            descrizione: "I Jigglypuff sono temuti per le loro doti canore."
+        },
+        {
+            nome: "Togepi",
+            img: "./img/togepi.jpg",
+            descrizione: "Vive all'interno del suo guscio che non abbandona mai."
+        },
+        {
+            nome: "Torchic",
+            img: "./img/torchic.jpg",
+            descrizione: "Le loro ali sono poco sviluppate e quasi inutili."
+        }
+    ];
+
+            let pokemon = document.getElementById("pokemon");
+            let cartaPokemon = document.getElementById("cartaPokemon");
+            let nomePokemon = document.getElementById("nomePokemon");
+            let imgPokemon = document.getElementById("imgPokemon");
+            let descrizionePokemon = document.getElementById("descrizionePokemon");
+
+            function mostraCarta(index) {
+                 let  pokemon = pokemons[index];
+            }
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>
