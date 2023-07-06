@@ -168,25 +168,54 @@ programmazione per contratto
 
 interfaccia legge l'input dell'utente
 
+incapsulamento: ti impedisce di accedere all'interno
+ereditarietà: modello gerarchico di classi
 
+polimorfismo è aiutati dalle interfacce
 
+oggetto volante
 
+cos'è una classe? classe astratta? interfaccia? differenze?
 
+una interfaccia PUO ESTENDERE un'altra interfaccia. una.
+una interfaccia NON è completamente astratta. 
+può essere vuota, usata solo per raggruppare. -> MARKER
+le interfacce che hanno un solo metodo -> Single Abstract method - annotazione @FunctionalInterface
+Predicate - boolean test(T t) confronto tipo
+Consumer - void accept(T t)
+Supplier- T get()
+Function - R apply(T t)
 
+serializzare
 
+lambda ->
 
+programmazione per contratto
 
+approccio procedurale:
+for (String elemento : moto3) {
+System.out.println(elemento);
+}
 
+approccio funzionale:
+moto3
+     .forEach(m->System.out.println(m));
 
+Predicate - boolean test(T t)
+.filter(m-> m.length()>4) filtri. faccio passare solo quelli che sono più lunghi di 4
+.filter(m-> m.endsWith("i")) finisce per i.
 
+le mie istruzioni non hanno effetti collaterali.
+l'approccio funzionale non deve avere effetti collaterali, senza "disturbare" il DB.
 
+il costruttore può essere privato
+si possono mettere più classi in
 
+//visualgo//
+come fai ad ordinare le cose?
 
+posso usare sort dopo avere implementato Comparable
+Collections.sort(libri); è stata permanentemente modificata la posizione. non è programmazione funzionale
 
-
-
-
-
-
-
-
+comparable è sulla classe, è un solo criterio
+Comparator fuori dalla classe model. vogliono ritornare un INT 
