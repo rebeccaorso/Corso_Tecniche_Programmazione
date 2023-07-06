@@ -14,6 +14,7 @@ public class ScannerDemo {
 		
 		System.out.println("Vuoi comprare " + risposta);
 
+		
 	}
 
 }
