@@ -219,3 +219,69 @@ Collections.sort(libri); è stata permanentemente modificata la posizione. non �
 
 comparable è sulla classe, è un solo criterio
 Comparator fuori dalla classe model. vogliono ritornare un INT 
+
+---------------------------------------------------------------
+10.07.2023
+JSON = elemento fondamentale per il collegamento.
+
+Servlet = classe astratta.
+non sa cosa vuoi fare con essa
+servlet specializzata in un protocollo http
+intercetta get e post.
+
+il DB gira su un server diverso. occupa due porte (8080 localhost) - (3306 mySQL)
+
+connessione al db con il driver 
+model trasformazione del record del db ad oggetto java
+
+postman- thunder 
+viste sono la rappresentazione dello stato del dato.
+
+REST : trasferimento dello stato in cui si trovano le risorse.
+
+logica da spostare da server a client.
+servlet -> controller/filtro capisce se arriva get o post.
+jsp la chiedo al server
+
+Spring lavora con notation
+
+httpServlet classe astratta
+ma i metodi della super non sono astratti o mi segnerebbe errore rosso
+
+object -> genericServlet -> httpServlet
+riceve le richieste direttamente dal client.
+form method post
+diversamente è sempre get
+
+@WebServlet("/elencofilm") rotta
+
+è il webserver a creare un nuovo Oggetto quando riceve una chiamata qui ("/elencofilm")
+
+http ha dei metodi. fondamentali per capire da dove è passata la richiesta.
+
+(HttpServletRequest request, HttpServletResponse response) -> Richiesta e Risposta
+
+<%@ include file="menu.jsp" %> con questo si fa l'inclusione
+
+la vista non ha il dato.
+
+getRequestDispatcher("lista.jsp").forward(request, response); può richiamare un'altra servlet non solo una pagina.
+servlet riceve le richieste, ottiene i dati
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
