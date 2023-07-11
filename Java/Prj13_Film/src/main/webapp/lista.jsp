@@ -1,3 +1,4 @@
+<%@page import="entities.Film"%>
 <%@page import="java.util.ArrayList"%>
 <%@ include file="header.jsp" %>
         
@@ -7,11 +8,11 @@
                 <th>Titolo</th>
                 <th>Genere</th>
             </tr>
-            <% ArrayList<String[]> elenco = (ArrayList<String[]>)request.getAttribute("elenco"); %>
-            <% for (String[]valori: elenco){ %>
+            <% ArrayList<Film> elenco = (ArrayList<Film>)request.getAttribute("elenco"); %>
+            <% for (Film f: elenco){ %>
             <tr>
-                <td><%= valori[0] %></td>
-                <td><%= valori[1] %></td>
+                <td><%=f.getTitolo() %></td>
+                <td><%=f.getGenere() %></td>
             </tr>
             <%} %>
         </table>
