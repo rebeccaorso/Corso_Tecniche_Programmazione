@@ -1,0 +1,44 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strobo</title>
+</head>
+<body>
+    <link rel="stylesheet" href="css/style.css">
+
+    <h1>Strobo Finto</h1>
+
+    <div id="strobo" style="width: 300px; height:300px; border: 1px solid black; border-radius: 50%;"></div>
+   
+
+<!-- senza toccare l'html ad ogni click sul cerchio dello strobo cambia colore
+utilizzando 6 classi di colore diverse e le alterniamo ad ogni click -->
+
+<script>
+
+let strobo = document.querySelector("#strobo");
+let colori = ['giallo','arancione','rosa', 'viola','violaScuro','blu'];
+let iter = 0;
+
+function coloriRandom(){
+    strobo.setAttribute('class', colori[iter]);
+    if(iter < colori.length-1){
+        iter++;
+    }else {
+        iter=0;
+    }
+}
+
+strobo.addEventListener("mouseover", coloriRandom);
+
+
+</script>
+
+    <!-- <script src="./js/script00.js"></script> -->
+</body>
+</html>

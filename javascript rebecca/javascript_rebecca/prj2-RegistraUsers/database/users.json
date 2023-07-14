@@ -1,0 +1,12 @@
+{
+  "users": [
+    {
+      "nome": "Rebecca",
+      "cognome": "o",
+      "email": "rebecca@gmail.com",
+      "codFis": "ssffseffgsgvd",
+      "tipo": "Ospite",
+      "id": 1
+    }
+  ]
+}
