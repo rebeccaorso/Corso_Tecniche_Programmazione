@@ -14,3 +14,4 @@ insert into libro(titolo, prezzo, pagine, editore_id)
 values('test',0,10,1);
 
 alter table libro drop check ck_prezzo;
+

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+
+	<script>
+const URL = "http://localhost:8080/Prj13_Film/api/film";
+fetch(URL).then(res=>res.json()).then(res=>{
+	const UL = document.createElement("ul");
+	for(const film of res){
+		const LI = document.createElement("li");
+		LI.textContent = film.titolo;
+		UL.append(LI);
+	}
+	document.body.append(UL);
+})
+</script>
+</body>
+</html>
