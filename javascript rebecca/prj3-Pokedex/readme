@@ -1,0 +1,4 @@
+Creazione Pokedex
+
+Utilizzando la seguente API (https://pokeapi.co/api/v2/pokemon/) crea unalista di pokemon dalla quale ne sceglierai 3. I 3 pokemon scelti verranno salvati nel tuo DB(json-server).
+Al pokedex accederete tramite voce di menu nel quale verranno visualizzati i 3 pokemon selezionati.
