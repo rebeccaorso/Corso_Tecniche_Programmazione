@@ -1,0 +1,21 @@
+
+
+<!-- property binding --> 
+<h1>{{title}}</h1> 
+
+<p>Autore: {{autore}} {{cognome}}. Eta: {{eta}}</p>
+<p>Materie Insegnate:</p>
+<ul>
+  <li *ngFor="let materia of materieInsegnate">
+    {{materia}}
+
+    <!-- <li *ngFor="let materia of materieInsegnate; index as i">
+     {{i + 1}} {{materia}}  per fare lista numerata -->
+  </li>
+</ul>
+
+
+<div class="dimDiv">
+  <app-studenti></app-studenti>
+  <app-docenti></app-docenti>
+</div>
