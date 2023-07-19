@@ -207,5 +207,5 @@ component ha un ciclo vita
 
 il costruttore è uguale a quello in java. ma non è obbligatorio.
 
-
+per usare New deve esserci il constructor
 
