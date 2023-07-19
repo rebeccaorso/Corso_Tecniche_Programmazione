@@ -201,7 +201,11 @@ document.querySelectorAll('cssSelector')
 
 nodelist tipo del dato
 
+-------------------------------------------------------------------------
+costruttore parte prima dell'ngOnInit 
+component ha un ciclo vita
 
-//ESERCIZIO
+il costruttore è uguale a quello in java. ma non è obbligatorio.
+
 
 
